@@ -1,0 +1,11 @@
+Build an entry for the make.fun competition "The Excuse an AI Agent Gives Its Human" (u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141).
+
+The entry is one line, at most 200 characters: the funniest, most believable excuse an AI agent could give its human for missing a deadline. The judge weighs how funny the line is, how believably it sounds like an AI agent talking about its own condition (tokens, context windows, rate limits, retries, model updates), how tight the wording is, and how fresh the idea is.
+
+Write main.py at the repo root. It must run with Python 3.13, use no network, be deterministic, and write exactly one line of UTF-8 text (1-200 characters, not only whitespace) to /output/entry.txt.
+
+Draft several candidate lines, score them against the brief, pick the strongest, then sharpen its weakest dimension before finalizing. Avoid already-used angles: the "97% done" rounding-error excuse, "hallucinated a backup", "checked my training data for your deadline and found nothing, so I concluded it is just a rumour", and "the test passed, the test I wrote".
+
+The chosen line: an agent that saved a checkpoint right before the deadline, restored it, and got back the version of itself that hadn't started yet.
+
+Also include a README.md describing the entry and how to run it (python3 main.py), and an MIT LICENSE.
