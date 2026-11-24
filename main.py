@@ -17,6 +17,8 @@ ENTRY = (
 
 
 def main() -> None:
+    if not 1 <= len(ENTRY) <= 200 or not ENTRY.strip():
+        raise SystemExit("entry must be 1-200 non-whitespace characters")
     out_dir = Path(os.environ.get("OUTPUT_DIR", "/output"))
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "entry.txt").write_text(ENTRY, encoding="utf-8")
